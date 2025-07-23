@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RV Obsina | Video Editor & Media Specialist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1f2937;
+      --secondary: #374151;
+      --accent: #facc15;
+      --light: #f9fafb;
+      --font-main: 'Cinzel', serif;
+      --font-secondary: 'Open Sans', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-secondary);
+      background-color: var(--light);
+      color: var(--primary);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+      font-family: var(--font-main);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p.tagline {
+      font-size: 1.25rem;
+      font-style: italic;
+      margin-top: 1rem;
+    }
+
+    nav {
+      background: var(--secondary);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    h2 {
+      font-family: var(--font-main);
+      color: var(--secondary);
+      border-left: 4px solid var(--accent);
+      padding-left: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .portfolio-item {
+      margin-bottom: 2rem;
+    }
+
+    .portfolio-video {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .portfolio-video video {
+      width: 100%;
+      max-width: 960px;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      font-family: var(--font-secondary);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      background: var(--accent);
+      color: var(--primary);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: #ffdb4d;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RV Obsina</h1>
+    <p>Video Editor & Media Specialist</p>
+    <p class="tagline">Crafting stories with precision, systems, and soul</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#resume">Resume</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#skills">Skills</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m RV Obsina — part visual storyteller, part systems nerd. I believe creative work doesn’t have to be chaotic. That’s why I bring structure to post-production — streamlining the editing process while preserving the magic of storytelling. Whether I’m grading wedding films or optimizing ID production flows, I bring clarity and cohesion to every frame.</p>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p><strong>Senior Video Editor / Videographer</strong><br>Maaya Studios (2020–Present)</p>
+    <p><strong>Graphic Artist</strong><br>Intercon Network Internet Cafe (2024–Present)</p>
+    <p><strong>Student Intern</strong><br>Antique National School (May 2022)</p>
+    <p><strong>Education:</strong><br>Senior High School – ABM Strand, Antique National School (2022–2023)</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-item">
+      <p><strong>Sample Project:</strong> <a href="https://drive.google.com" target="_blank">Google Drive Link</a></p>
+    </div>
+    <div class="portfolio-item">
+      <p><strong>Wedding Video Project:</strong> <a href="https://drive.google.com" target="_blank">Google Drive Link</a></p>
+    </div>
+    <div class="portfolio-video">
+      <video autoplay muted loop>
+        <source src="https://drive.google.com/file/d/1ce0i5gKz82CugRTNmPid_GkLvQJdKom_/view?usp=drive_link" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Video Editing (DaVinci Resolve, Adobe Premiere Pro)</li>
+      <li>Motion Graphics (After Effects)</li>
+      <li>Graphic Design (Photoshop)</li>
+      <li>Workflow Automation (Excel, Scripting)</li>
+      <li>Team Communication & Systems Development</li>
+      <li>Photography & Scene Composition</li>
+    </ul>
+  </section>
+
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <p>“RV is one of the most reliable and creative editors I've worked with. His ability to streamline our workflow saved us countless hours.” – Studio Collaborator</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Your Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 RV Obsina. Built with purpose and passion.</p>
+  </footer>
+</body>
+</html>
